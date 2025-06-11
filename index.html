@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+  <title>Moezo</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Oxanium', sans-serif;
+      display: flex;
+      flex-direction: column;
+      background-color: #322928; /* background to match right-column */
+      color: #dad0d0;
+    }
+
+    #banner {
+      background-image: url('me.png');
+      background-size: cover;
+      background-position: center 42%;
+      padding: 60px 0;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      color: white;
+    }
+
+    .banner-title-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .banner-title {
+      margin: 0;
+      padding: 10px 20px;
+      font-weight: 700;
+      text-align: center;
+      color: #dad0d0;
+      text-shadow:
+        0 0 5px #8c9c89,
+        0 0 10px #717270,
+        0 0 20px #bbc0ba,
+        0 0 40px rgb(229, 236, 234),
+        0 0 80px rgb(217, 241, 233);
+    }
+
+    #main-content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      flex-grow: 1;
+      overflow: auto;
+      height: auto; /* just to be safe */
+    }
+
+    .left-column {
+      background-color: #414644;
+      padding: 5% 5%;
+      font-size: 1.15em;
+      line-height: 1.9;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      color: #dad0d0;
+    }
+
+    .right-column {
+      background-color: #322928;
+      padding: 5% 15%;
+      font-size: 1em;
+      line-height: 1.9;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      color: #dad0d0;
+    }
+
+    .column-text {
+      padding-top: 24px;
+      margin: 0;
+      padding-left: 20px; 
+    }
+
+    .entry-list {
+      padding-left: 20px; 
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .entry-item {
+      list-style: none;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 100px;
+      margin: 0;
+      text-align: center;
+      background-color: #414644;
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    .entry-link {
+      text-decoration: none;
+      color: #dad0d0;
+      font-size: 1.1em;
+    }
+
+    .entry-link:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      height: 35px;
+      background-color: #1e201f;
+      color: #dad0d0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      font-weight: 400;
+      font-size: 0.9em;
+      user-select: none;
+    }
+    .footer-links{
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .footer-links:hover{
+      text-decoration: underline;
+        text-shadow:
+        0 0 5px #8c9c89,
+        0 0 10px #717270,
+        0 0 20px #bbc0ba,
+        0 0 40px rgb(229, 236, 234);
+    }
+  </style>
+</head>
+<body>
+
+  <header id="banner">
+    <div class="banner-title-container">
+      <h1 class="banner-title">Moezo</h1>
+    </div>
+    <div></div>
+  </header>
+
+  <main id="main-content">
+    <div class="left-column">
+      <p class="column-text">
+        Here is the text for the left column. 
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+        Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, 
+        vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+      </p>
+    </div>
+    <div class="right-column">
+      <ul class="entry-list">
+        <li class="entry-item"><a href="article1.html" class="entry-link"> Donec pede justo, fringilla vel, aliquet nec, 
+        vulputate eget, arcu.</a></li>
+        <li class="entry-item"><a href="article2.html" class="entry-link">Semi-Urban Decay: New Fantasies & Old Alongside Our Changing Landscape </a></li>
+        <li class="entry-item"><a href="article3.html" class="entry-link">Alcibidean Hubris: No Greater Trickster Than I</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <h5 class="footer-links">More</h5>
+    <h5 class="footer-links">Less</h5>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
