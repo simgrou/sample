@@ -139,15 +139,19 @@
         0 0 20px #bbc0ba,
         0 0 40px rgb(229, 236, 234);
     }
+  @media (max-width: 768px) {
+    #main-content {
+      display: block;
+  }
 
-    @media only screen and (min-width: 480px) and (max-width: 768px) {
-      /* mobile version */
-      #main-content {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-      }
-    }
+  .left-column,
+  .right-column {
+      width: 100%;
+      box-sizing: border-box;
+  }
+  }
+
+    
   </style>
 </head>
 <body>
