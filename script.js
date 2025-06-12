@@ -7,14 +7,14 @@
 
 
 
-// Select all entry links
+
 const entryLinks = document.querySelectorAll('.entry-link');
 
 entryLinks.forEach(link => {
-  // Get the parent element (li) which has the background
+ 
   const parentItem = link.closest('li');
 
-  // Add hover event listeners
+  
   link.addEventListener('mouseover', () => {
     parentItem.style.backgroundColor = '#A0A2A1';
     parentItem.style.color = 'black';
