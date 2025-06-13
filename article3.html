@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+  <title>Moezo has nothing for you here</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Oxanium', sans-serif;
+      background-color: #322928;
+      color: #dad0d0;
+    }
+
+    #banner {
+      background-image: url('me.png');
+      background-size: cover;
+      background-position: center 42%;
+      padding: 60px 0;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      color: white;
+    }
+
+    .banner-title-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .banner-title {
+      margin: 0;
+      padding: 10px 20px;
+      font-weight: 700;
+      text-align: center;
+      color: #dad0d0;
+      text-shadow:
+        0 0 5px #8c9c89,
+        0 0 10px #717270,
+        0 0 20px #bbc0ba,
+        0 0 40px rgb(229, 236, 234),
+        0 0 80px rgb(217, 241, 233);
+    }
+
+    #main-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      flex-grow: 1;
+      overflow: auto;
+      height: auto;
+    }
+
+    .content {
+      padding: 1% 5%;
+      font-size: 1.15em;
+      line-height: 1.9;
+      display: flex;
+      flex-direction: column;
+      background-color: #414644;
+      justify-content: top;
+      text-align: center;
+      grid-template-rows: auto;
+      align-items: center; 
+    }
+
+    .content-text {
+      color: #dad0d0;
+    }
+
+    .footer {
+      height: 35px;
+      background-color: #1e201f;
+      color: #dad0d0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      font-weight: 400;
+      font-size: 0.9em;
+      user-select: none;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .footer-links:hover {
+      text-decoration: underline;
+      text-shadow:
+        0 0 5px #8c9c89,
+        0 0 10px #717270,
+        0 0 20px #bbc0ba,
+        0 0 40px rgb(229, 236, 234);
+    }
+
+    
+    .content-image {
+      max-width: 100%;  
+      max-height: 60vh;      
+      height: auto;    
+      object-fit: contain;       
+      margin-top: 10px;        
+      border-radius: 10px;     
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); 
+    }
+   
+
+
+
+
+  </style>
+</head>
+<body>
+  <header id="banner">
+    <div class="banner-title-container">
+      <h1 class="banner-title">Moezo</h1>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="content">
+      <h2 class="content-text">
+        Unfortunately there is nothing here, yet... nothing here yet... nothing here yet... no thing here yet.
+      </h2> 
+
+    
+      <img 
+        src="gaming.png" 
+        alt="a field in the setting sun" 
+        class="content-image"
+      />
+   
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <h5 class="footer-links">More</h5>
+    <h5 class="footer-links">Less</h5>
+  </footer>
+</body>
+</html>
