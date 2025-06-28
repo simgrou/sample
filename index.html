@@ -117,47 +117,61 @@
       /*padding-left: 20px;*/
     }
 
-    .entry-list {
-      padding-left: 20px; 
-      margin: 0;
+    .image {
       display: flex;
-      flex-direction: column;
-      gap: 15px;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+    .boxes {
+      display: flex;
+      justify-content: center;
+      gap: 20px; 
+      align-items: center;
+      flex-direction: row;
+      margin-top: 40px; 
+      margin-bottom: 40px;
+      width: 100%;
     }
 
-    .entry-item {
-      list-style: none;
-      padding: 20px;
-      box-sizing: border-box;
-      border-radius: 100px;
-      margin: 0;
-      text-align: center;
-      background-color: #414644;
-      transition: background-color 0.5s ease-in-out;
-    }
-
-    .entry-link {
-      text-decoration: none;
-      color: #dad0d0;
-      font-size: 1.1em;
-    }
-
-    .entry-link:hover {
-      text-decoration: underline;
+    .box {
+     background-color: #414644;
+     text-align: center;
+     padding: 10px 20px;
+     border-radius: 6px;
+     color: #dad0d0;
+     min-width: 100px;
     }
 
     .footer {
       height: 35px;
       background-color: #1e201f;
       color: #dad0d0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
+      display: block;
       flex-shrink: 0;
       font-weight: 400;
       font-size: 0.9em;
       user-select: none;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      height: 100%;
+      align-items: center;
+      width: 100%;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      height: 100%;
+      overflow: hidden;
     }
     .footer-links{
       display: flex;
@@ -216,19 +230,31 @@
       </p>
     </div>
     <div class="right-column">
-      <ul class="entry-list">
-        <li class="entry-item"><a href="article1.html" class="entry-link"> Donec pede justo, fringilla vel, aliquet nec, 
-        vulputate eget, arcu.</a></li>
-        <li class="entry-item"><a href="article2.html" class="entry-link">Semi-Urban Decay: New Fantasies & Old Alongside Our Changing Landscape </a></li>
-        <li class="entry-item"><a href="article3.html" class="entry-link">Alcibidean Hubris: No Greater Trickster Than I</a></li>
-      </ul>
+      <img src="field_2.jpg" class="image">
+      <div class="boxes">
+        <div class="box">
+          <p>Fiction</p>
+        </div>
+        <div class="box">
+          <p>Non-Fiction</p>
+        </div>
+        <div class="box">
+          <p>Image Gallery</p>
+        </div>
+      </div>
     </div>
   </main>
 
-  <footer class="footer">
-    <h5 class="footer-links">More</h5>
-    <h5 class="footer-links">Less</h5>
-  </footer>
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-spacer"></div>
+    <div class="footer-content">
+      <h5 class="footer-links">More</h5>
+      <h5 class="footer-links">less</h5>
+    </div>
+  </div>
+</footer>
+
 
 <script src="script.js"></script>
 </body>
