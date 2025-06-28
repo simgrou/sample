@@ -58,18 +58,23 @@
 
     .left-column {
       background-color: #414644;
-      padding: 5% 5%;
-      font-size: 1.2em;
-      line-height: 1.5;
+      /*padding: 5% 5%;*/
+      line-height: 1;
       display: flex;
+      height: 100%;
       flex-direction: column;
       justify-content: start;
       color: #dad0d0;
     }
 
+    .spacer {
+      flex-grow: 1;
+    }
+
     .right-column {
       background-color: #322928;
-      padding: 5% 15%;
+      padding: 0% 15%;
+      margin-top: 33px;
       font-size: 1em;
       line-height: 1;
       display: flex;
@@ -79,9 +84,37 @@
     }
 
     .column-text {
-      padding-top: 24px;
+      font-size: 1.4em;
       margin: 0;
-      padding-left: 20px; 
+      line-height: 1.2;
+      text-align: left;
+      padding-top: 66px;
+      padding-left: 5%;
+      padding-right: 5%; 
+      padding-bottom: 0%;
+    }
+    
+    .column-text-title {
+      text-align: center;
+      font-size: 1.5;
+      margin-bottom: 0;
+      margin-top: 33px;
+        text-shadow:
+    0 0 4px  #8c9c89,
+    0 0 8px  #717270,
+    0 0 16px   #bbc0ba,
+    0 0 32px    rgb(229, 236, 234);
+    }
+
+    .column-text-2 {
+      font-size: 0.75em;
+      margin-bottom: 2%;
+      text-align: left;
+      line-height: 1.5;
+      justify-content: flex-end;
+      padding-left: 5%;
+      padding-right: 5%;
+      /*padding-left: 20px;*/
     }
 
     .entry-list {
@@ -165,20 +198,22 @@
 
   <main id="main-content">
     <div class="left-column">
-      <h2 class="column-text">
+      <h2 class="column-text-title">
         Hear ye Hear ye, Here ye will hear me. 
       </h2>
       <p class="column-text">
         There will be blog posts, I will share ideas and thoughts whether they are fully formed or half-baked. 
         I am particularly interested in personal psychology, group/social dynamics, political phil, 'semiotic studies'; in other words anything
         that lets me ramble about something Plato wrote and Aristophanes joked about and lets me maintain some sort of shitty faux-marxist philosophy
-        whilst still ridiculing those morons outside of universities with cravats and litle badges of lenin or stalin etc etc. 
-
+        whilst still ridiculing those morons outside of universities with cravats and litle badges of lenin or stalin etc etc.
+      </p>
+      <div class="spacer"></div>
+      <p class="column-text-2">
         n.b: I like to play with language and lyricism and inject dialect inta me writing. I think that standardised academic English is a wonderful and useful tool
         but I also think that the literary world right now is devoid of any inventiveness and thats y sum'times I like to write like I speak and in so doing give a little 
         insight into the sort of schizoid/psychotic like mental dialogues I experience. I enjoy typing this and thats and so and so's for example just to make onepoint or another and 
         if ya don't like it ya can sod off and stuff it where tha sun don't shine. 
-      </p
+      </p>
     </div>
     <div class="right-column">
       <ul class="entry-list">
